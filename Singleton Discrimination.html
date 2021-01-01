@@ -87,7 +87,7 @@
     ]
     function singletonStim(tgtPosition, tgtColor, tgtOrientation) {
         var svg = '<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">'
-        var colors = jsPsych.randomization.repeat(['cyan', 'blueviolet', 'black', 'orangered', 'gold'], 1)
+        var colors = jsPsych.randomization.repeat(['cyan', 'blueviolet', 'black', 'magenta', 'gold'], 1)
         colors.splice(tgtPosition, 0, tgtColor)
         svg += '<circle cx="50" cy="50" r="10" fill="none" transform="translate( 26  15)" stroke="' + colors[0] + '" />'
         svg += '<circle cx="50" cy="50" r="10" fill="none" transform="translate(  0  30)" stroke="' + colors[1] + '" />'
